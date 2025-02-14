@@ -1,12 +1,12 @@
 package org.mhh.OOP_in_Java.Primitive_data_types_in_Java;
 
-import lombok.Data;
 
 import java.util.List;
 
-@Data
+
 public class Library {
     private List<Book> books;
+
 
     public Book serachbook(String title) {
         for (Book book : books) {
@@ -27,5 +27,11 @@ public class Library {
         return null;
     }
 
+    public List<Book> getBooks() {
+        return books;
+    }
 
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
 }
